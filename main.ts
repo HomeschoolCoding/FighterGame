@@ -1003,12 +1003,12 @@ controller.player2.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.R
 
 controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     if (player1.overlapsWith(player2)) {
-        info.player2.changeScoreBy(-5)
+        info.player2.changeScoreBy(-5)}
     
     if (lookRight1 == true) {
-        animation.runImageAnimation(player1, punchRight1, 200, false)}
-    }
-    else { animation.runImageAnimation(player1, punchLeft1, 200, false) }
+        animation.runImageAnimation(player1, punchRight1, 200, false)
+    }else { 
+        animation.runImageAnimation(player1, punchLeft1, 200, false)}
 })
     
 
@@ -1017,7 +1017,8 @@ controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
         info.player1.changeScoreBy(-5)
     }
     
-    if (lookRight2 == true) { animation.runImageAnimation(player2, punchRight2, 100, false)}
+    if (lookRight2 == true) { 
+        animation.runImageAnimation(player2, punchRight2, 200, false)}
     
-    else {animation.runImageAnimation(player2, punchLeft2, 100, false)}
+    else {animation.runImageAnimation(player2, punchLeft2, 200, false)}
 })
