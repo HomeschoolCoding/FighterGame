@@ -1014,9 +1014,9 @@ controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
 
 controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     if (player2.overlapsWith(player1)) {
+        
         info.player1.changeScoreBy(-5)
     }
-    
     if (lookRight2 == true) { 
         animation.runImageAnimation(player2, punchRight2, 200, false)}
     
