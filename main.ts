@@ -184,7 +184,6 @@ let player2 = sprites.create(img`
     ........................................
     ........................................
 `, SpriteKind.Player)
-tiles.setCurrentTilemap(tilemap`level1`)
 scene.cameraFollowSprite(player1)
 player1.ay = 150
 player2.ay = 150
