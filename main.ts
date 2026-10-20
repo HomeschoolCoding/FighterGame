@@ -1334,4 +1334,3 @@ controller.player2.onButtonEvent(ControllerButton.Up, ControllerButtonEvent.Pres
         player2.vy = 0
     }
 })
-`)
