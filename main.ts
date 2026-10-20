@@ -1304,7 +1304,6 @@ controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
 
 controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     if (player2.overlapsWith(player1)) {
-        
         info.player1.changeScoreBy(-5)
     }
     if (lookRight2 == true) { 
@@ -1335,4 +1334,3 @@ controller.player2.onButtonEvent(ControllerButton.Up, ControllerButtonEvent.Pres
         player2.vy = 0
     }
 })
-
