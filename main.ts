@@ -193,9 +193,6 @@ info.player2.setScore(100)
 let player1Score = info.player1.score()
 let player2Score = info.player2.score()
 
-
-
-
 let walkRight1 = [
     img`
         ........................................
