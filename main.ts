@@ -1325,6 +1325,7 @@ controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
     else {animation.runImageAnimation(player2, punchLeft2, 200, false)
         pause(200)
         if (player2.overlapsWith(player1)) {
+            pause(200)
             info.player1.changeScoreBy(-5)
         }
     
