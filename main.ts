@@ -184,7 +184,7 @@ let player2 = sprites.create(img`
     ........................................
     ........................................
 `, SpriteKind.Player)
-scene.cameraFollowSprite(player1)
+
 player1.ay = 150
 player2.ay = 150
 info.player1.setScore(100)
@@ -1292,24 +1292,37 @@ controller.player2.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.R
 })
 
 controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
-    if (player1.overlapsWith(player2)) {
-        info.player2.changeScoreBy(-5)}
-    
-    if (lookRight1 == true) {
-        animation.runImageAnimation(player1, punchRight1, 200, false)
-    }else { 
-        animation.runImageAnimation(player1, punchLeft1, 200, false)}
+    timer.throttle("action", 1000, function () {
+        if (lookRight1 == true) {
+            animation.runImageAnimation(player1, punchRight1, 200, false)
+            if (player1.overlapsWith(player2)) {
+                info.player2.changeScoreBy(-5)
+            }
+        }
+
+
+        else {
+            animation.runImageAnimation(player1, punchLeft1, 200, false)
+            if (player1.overlapsWith(player2)) {
+                info.player2.changeScoreBy(-5)
+            }
+        }
+    })
 })
     
 
 controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
-    if (player2.overlapsWith(player1)) {
-        info.player1.changeScoreBy(-5)
-    }
+ timer.throttle("action", 1000, function() {
     if (lookRight2 == true) { 
-        animation.runImageAnimation(player2, punchRight2, 200, false)}
+        animation.runImageAnimation(player2, punchRight2, 200, false)
+        if (player2.overlapsWith(player1)) {
+            info.player1.changeScoreBy(-5)}}
+        
     
-    else {animation.runImageAnimation(player2, punchLeft2, 200, false)}
+    else {animation.runImageAnimation(player2, punchLeft2, 200, false)
+        if (player2.overlapsWith(player1)) {
+                info.player1.changeScoreBy(-5)}}
+})   
 })
 controller.player1.onButtonEvent(ControllerButton.Up, ControllerButtonEvent.Pressed, function () {
     if (player1.isHittingTile(CollisionDirection.Bottom)){

@@ -4,7 +4,8 @@
     "dependencies": {
         "device": "*",
         "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.1.0",
-        "multiplayer": "*"
+        "multiplayer": "*",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0"
     },
     "files": [
         "main.ts",
