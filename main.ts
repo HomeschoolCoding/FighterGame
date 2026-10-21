@@ -184,7 +184,6 @@ let player2 = sprites.create(img`
     ........................................
     ........................................
 `, SpriteKind.Player)
-scene.cameraFollowSprite(player1)
 player1.ay = 150
 player2.ay = 150
 info.player1.setScore(100)
