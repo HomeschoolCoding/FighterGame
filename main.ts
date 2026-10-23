@@ -1292,7 +1292,7 @@ controller.player2.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.R
 
 controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     
-    timer.throttle("action", 900, function() {
+    timer.throttle("action", 500, function() {
     
     if (lookRight1 == true) {
         animation.runImageAnimation(player1, punchRight1, 200, false)
@@ -1312,7 +1312,7 @@ controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
     
 
 controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
-    timer.throttle("action", 900, function () {
+    timer.throttle("action", 500, function () {
     
     
     if (lookRight2 == true) { 
