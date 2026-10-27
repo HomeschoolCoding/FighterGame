@@ -34,6 +34,12 @@ namespace myTiles {
     export const tile15 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile16 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile17 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile18 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile19 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -49,6 +55,25 @@ namespace myTiles {
 ...........222..222..222...........2222..2222.....2222222..............2222222........
 222222222222222222222222222222222222222..2222222222222222..............222222222222222
 `, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13], TileScale.Sixteen);
+            case "level2":
+            case "level2":return tiles.createTilemap(hex`140010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000404040400000000000000000000000000000000000000000000000000000000000000000000040400000000040400000000000000000303000000000000000000000000030300000000000000000000000000000000000000000000000000000000000000000000000000000000000002020202020202020202020202020202020202020101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`, img`
+....................
+....................
+........2222........
+....................
+......22....22......
+..22............22..
+....................
+....................
+22222222222222222222
+22222222222222222222
+22222222222222222222
+22222222222222222222
+22222222222222222222
+22222222222222222222
+22222222222222222222
+22222222222222222222
+`, [myTiles.transparency16,myTiles.tile18,myTiles.tile19,sprites.dungeon.floorLight0,sprites.dungeon.floorDark0], TileScale.Sixteen);
         }
         return null;
     })
@@ -89,6 +114,12 @@ namespace myTiles {
             case "tile15":return tile15;
             case "forestTiles15":
             case "tile16":return tile16;
+            case "dirt and grass and other stuff speaking of which im hungry and i think ill go to wendys":
+            case "tile17":return tile17;
+            case "myTile0":
+            case "tile18":return tile18;
+            case "myTile1":
+            case "tile19":return tile19;
         }
         return null;
     })

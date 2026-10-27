@@ -101,6 +101,24 @@
         "tilemapTile": true,
         "displayName": "forestTiles15"
     },
+    "tile17": {
+        "data": "hwQQABAAAAAAAABw5+7u7gAAAHDn7u7tAAAAcOfe7u4AAABw5+7u7gAAAHDn7u7uAAAAcOft3u4AAABw5+7u7gAAAHDn7u7uAAAAcOfu7e0AAABw5+7u7gAAAHDn7u3uAAAAcOfu7t4AAABw5+3u7gAAAHDn7u3uAAAAcOfu7u4AAABw5+3u3g==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "dirt and grass and other stuff speaking of which im hungry and i think ill go to wendys"
+    },
+    "tile18": {
+        "data": "hwQQABAAAADu7u7u7u7u7u7u7u7u7u3u7t7u7u7u7u7u7u7t3u7u7e7u7u7u7u7u7u7u7u7u7u7u7u7u7t7u7t7u7u7u7u7t7u7u7u3u7u7u3u7u7u7u7u7u7u7u7u7u7u7u3u7e7u7u7u7u7u7e7t7u7u3u7u7u7t7u7u7u7u7u7u7u7u7u7g==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile0"
+    },
+    "tile19": {
+        "data": "hwQQABAAAAB35+7u7u7u7nfn3u7e7u7ud+fu7u7t7u535+7e7u7u7Xfn7u7u7u7ud+ft7u7t7u535+7u7u7u7nfn7u7u7u7ud+fe7u7u7u535+7e7u7t7nfn7u7e7u7td+fu7u7u7u535+3u7u7t7nfn7u7u7u7ud+fu7u7u7u535+7u7u7u7g==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile1"
+    },
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
@@ -122,6 +140,19 @@
             "myTiles.tile13"
         ],
         "displayName": "level1"
+    },
+    "level2": {
+        "id": "level2",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxNDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDQwNDA0MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNDA0MDAwMDAwMDAwNDA0MDAwMDAwMDAwMDAwMDAwMDAzMDMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIyMDAwMDIyMDAwMDAwMDAyMjAwMDAwMDAwMDAwMDIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile18",
+            "myTiles.tile19",
+            "sprites.dungeon.floorLight0",
+            "sprites.dungeon.floorDark0"
+        ],
+        "displayName": "level2"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
