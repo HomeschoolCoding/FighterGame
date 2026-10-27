@@ -4,7 +4,9 @@
     "dependencies": {
         "device": "*",
         "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.1.0",
-        "multiplayer": "*"
+        "multiplayer": "*",
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0"
     },
     "files": [
         "main.ts",
@@ -17,7 +19,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "4.1.25",
+        "target": "4.1.27",
         "targetId": "arcade"
     },
     "supportedTargets": [
