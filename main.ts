@@ -184,8 +184,8 @@ let player2 = sprites.create(img`
     ........................................
     ........................................
 `, SpriteKind.Player)
-player1.ay = 0
-player2.ay = 0
+player1.ay = 150
+player2.ay = 150
 info.player1.setScore(105)
 info.player2.setScore(105)
 let player1Score = info.player1.score()
